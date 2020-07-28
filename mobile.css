@@ -1,0 +1,53 @@
+.bg {
+  height: 100vh;
+  /* position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; */
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./images/bg-mobile.png") no-repeat center center/cover;
+}
+.bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.point {
+  display: none;
+}
+
+.data-left {
+  position: absolute;
+  top: 73%;
+  left: 25vh;
+}
+
+.fylo {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 350px;
+  margin: 0 auto;
+}
